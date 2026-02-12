@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Minimal Scene</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="canvas-container"></div>
+
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="hero-content">
+          <h2 class="subtitle">MCA – DATA SCIENCE STUDENT | HARDWARE GRADUATE</h2>
+          <h1 class="title">VALLAPU<br>SHIVA SHANKAR</h1>
+          <div class="hero-buttons">
+            <button class="glass-btn"
+              onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">ABOUT</button>
+            <button class="glass-btn"
+              onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">PROJECTS</button>
+            <button class="glass-btn"
+              onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">CONTACT</button>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span>SCROLL TO EXPLORE</span>
+          <div class="line"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="content-section">
+        <h2>ABOUT ME</h2>
+        <p class="bio">
+          I am a passionate MCA student specializing in Data Science with a strong foundation in Computer Hardware.
+          I bridge the gap between software intelligence and hardware systems, aiming to build integrated technological
+          solutions.
+          Based in Hyderabad, India.
+        </p>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="content-section">
+        <h2>EDUCATION</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="year">2026 (Expected)</div>
+            <div class="role">Master of Computer Applications (MCA)</div>
+            <div class="desc">Specialization in Data Science</div>
+          </div>
+          <div class="timeline-item">
+            <div class="year">2023</div>
+            <div class="role">Computer Hardware Graduation</div>
+            <div class="desc">Hardware Systems & Architecture</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="content-section">
+        <h2>TECHNICAL SKILLS</h2>
+        <div class="skills-grid">
+          <div class="skill-card">Data Science</div>
+          <div class="skill-card">Machine Learning</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">Computer Hardware</div>
+          <div class="skill-card">Networking</div>
+          <div class="skill-card">IoT Systems</div>
+        </div>
+      </section>
+
+      <!-- Project Section (Drone) -->
+      <section id="projects" class="content-section">
+        <h2>FEATURED PROJECT</h2>
+        <div class="project-card-container">
+          <div class="project-info">
+            <h3>SATELLITE CONTROLLED<br>MODEL BOMBING DRONE</h3>
+            <p>Team Leader</p>
+            <p class="project-desc">
+              Designed and implemented a hexacopter with advanced stability control systems.
+              Focused on balancing algorithms and remote satellite-based communication protocols for precision
+              maneuvering.
+            </p>
+          </div>
+        </div>
+        <!-- 3D Drone will float here visually -->
+        <div class="spacer-large"></div>
+      </section>
+
+      <!-- Strengths & Hobbies -->
+      <section id="strengths" class="content-section split-section">
+        <div class="half">
+          <h2>STRENGTHS</h2>
+          <ul class="icon-list">
+            <li>Leadership</li>
+            <li>Problem Solving</li>
+            <li>Hardware Diagnostics</li>
+            <li>Team Management</li>
+          </ul>
+        </div>
+        <div class="half">
+          <h2>HOBBIES</h2>
+          <ul class="icon-list">
+            <li>Robotics</li>
+            <li>Tech Research</li>
+            <li>Badminton</li>
+            <li>Photography</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="content-section centered">
+        <h2>GET IN TOUCH</h2>
+        <div class="contact-links">
+          <a href="#" class="glass-btn">EMAIL ME</a>
+          <a href="#" class="glass-btn">+91 98765 43210</a>
+        </div>
+      </section>
+
+      <section id="footer">
+        <p>&copy; 2026 VALLAPU SHIVA SHANKAR. HYDERABAD, INDIA.</p>
+      </section>
+
+    </div>
+  </main>
+
+  <div id="noise-overlay"></div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
